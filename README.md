@@ -1,73 +1,90 @@
-🧠 macOS Developer Starter Kit
+# 🧠 macOS Developer Starter Kit
 
 A lightweight yet powerful starter kit to set up your macOS environment for Python development, especially for AI, machine learning, and LLM projects. This kit includes a setup script to streamline your tools, packages, environments, and test files — fully compatible with both Anaconda and Visual Studio Code.
 
-🚀 What's Included?
+![Platform](https://img.shields.io/badge/platform-macOS-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-✅ Homebrew for system-level package management
+---
 
-✅ Pyenv for Python version control
+## 🚀 What's Included?
 
-✅ Visual Studio Code extensions setup
+- ✅ Homebrew for system-level package management
+- ✅ Pyenv for Python version control
+- ✅ Visual Studio Code extensions setup
+- ✅ AI/LLM-focused `requirements.txt`
+- ✅ Hugging Face Transformers test example (`llm_test.py`)
+- ✅ One-step environment installer (`setup.sh`)
 
-✅ AI/LLM-focused requirements.txt
+---
 
-✅ Hugging Face Transformers test example (llm_test.py)
+## ⚙️ Quick Install
 
-✅ One-step environment installer (setup.sh)
-
-⚙️ Quick Install
-
+```bash
 git clone https://github.com/yourusername/macos-dev-starter.git
 cd macos-dev-starter
 chmod +x setup.sh
 ./setup.sh
+```
 
-Note: If you're running this on a fresh macOS system, you may need to install Xcode Command Line Tools first:
+> 💡 If you're running this on a fresh macOS system, you may need to install Xcode Command Line Tools first:
+> ```bash
+> xcode-select --install
+> ```
 
-xcode-select --install
+---
 
-📂 Repository Structure
+## 📂 Project Structure
 
+```bash
 macos-dev-starter/
 ├── README.md          # Project overview and setup instructions
 ├── setup.sh           # Main installation script
 ├── requirements.txt   # Python packages for AI/LLM development
 └── llm_test.py        # Sample script to validate setup
+```
 
-🧪 Run the Test Script
+---
 
-Once installation is complete, verify everything by running:
+## 🧪 How to Test
 
+After setup is complete, you can run the following to verify your environment:
+
+```bash
 python llm_test.py
+```
 
-This uses a Hugging Face pipeline to perform sentiment analysis on a sample input text.
+This will execute a sentiment analysis pipeline using Hugging Face's `transformers` and display results on sample text.
 
-🛠 Requirements Installed via setup.sh
+---
 
-Python packages:
+## 📦 Tools & Packages Installed
 
-numpy, pandas, matplotlib, scikit-learn
+- **Python packages:**
+  - `numpy`, `pandas`, `matplotlib`, `scikit-learn`
+  - `jupyterlab`, `torch`, `transformers`, `sentence-transformers`
+  - `langchain`, `llama-index`, `openai`, `bitsandbytes`, `peft`, `accelerate`
 
-jupyterlab, torch, transformers, sentence-transformers
+- **VS Code Extensions:**
+  - Python
+  - Jupyter
+  - GitHub Copilot
 
-langchain, llama-index, openai, bitsandbytes, peft, accelerate
+---
 
-VS Code Extensions:
+## 👨‍💻 Author
 
-Python
+Created by **Mehmet Tuğrul Kaya**  
+Software Project Manager | AI/NLP Developer  
+[Medium Profile](https://medium.com/@mehmettugrulkaya)
 
-Jupyter
+---
 
-GitHub Copilot
+## 📄 License
 
-👨‍💻 Author
+MIT License or Creative Commons Attribution (choose your preferred license before publishing).
 
-Created by Mehmet Tuğrul KayaSoftware Project Manager | AI/NLP Developer
-
-📄 License
-
-MIT License or Creative Commons Attribution (your choice — to be added here).
+---
 
 Happy coding on your Mac! 🍏💻
 
